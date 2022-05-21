@@ -13,40 +13,40 @@
     
     <title>Jogo da Forca</title>
 </head>
-
-
-<section id="page01">
-    <div class="logo"><img src="./images/Logo.png" alt="logo"></div>
-    <div class="content">
-        <div class="btns">
-            <button class="btn btn-azul" id="btn01"  ><a href="#page02">Começar a jogar</a> </button>
-            <button class="btn btn-branco" id="btn02" ><a href="#page03">Adiciconar nova palavra</a></button>
+<body>
+    <div>
+        <div class="logo"><img src="./images/Logo.png" alt="logo"></div>
+        <div id="page01">
+            <div class="content page01">
+                <div class="btns">
+                    <button class="btn btn-azul" id="comecar">Começar a jogar</button>
+                    <button class="btn btn-branco" id="adicionar">Adiciconar nova palavra</button>
+                </div>
+            </div>
         </div>
-    </div>
-    <footer><span><a href="https://github.com/jjivanc"class="fa fa-github" aria-hidden="true"></a></span><span><a href="https://www.linkedin.com/in/jjivanc/" class="fa fa-linkedin" aria-hidden="true"></a></span> </footer>
-</section>
-<section id="page02">
-    <div class="logo"><img src="./images/Logo.png" alt="logo"></div>
-    <div class="content">
-        <div class="btns">
-            <button class="btn btn-azul" id="btn01"  >Novo jogo</button>
-            <button class="btn btn-branco" id="btn02" >Desistir</button>
+        <div class="hide" id="page02">
+            <div class="content page02">
+                <img src="./images/stick-man0.svg" alt="">
+                <span><img src="./images/Letter.png" alt=""></span>
+                <div class="btns hori">
+                    <button class="btn btn-azul" id="novo">Novo jogo</button>
+                    <button class="btn btn-branco" id="desistir">Desistir</button>
+                </div>
+            </div>
         </div>
-    </div>
-    <footer><span><a href="https://github.com/jjivanc"class="fa fa-github" aria-hidden="true"></a></span><span><a href="https://www.linkedin.com/in/jjivanc/" class="fa fa-linkedin" aria-hidden="true"></a></span> </footer>
-</section>
-<section id="page03">
-    <div class="logo"><img src="./images/Logo.png" alt="logo"></div>
-    <div class="content">
-        <div class="btns">
-            <textarea name="add" id="addNew" cols="30" rows="10"></textarea>
-            <div class="aviso" ><img src="./images/bi_exclamation-circle-fill.png" alt=""><p class="text3">Apenas letras minúsculas e sem acento.</p></div>
-            <button class="btn btn-azul" id="btn01">Salvar e começar</button>
-            <button class="btn btn-branco" id="cancelar">Cancelar</button>
+        <div class="hide" id="page03">
+            <div class="content page03">
+                <textarea name="add" id="addNew" cols="30" rows="10" maxlength="8" placeholder="Digite a Palavra"></textarea>
+                <div class="aviso" ><img src="./images/Vector.png" alt=""><p class="text3">Máx. de 8 letras.</p></div>
+                <div class="btns hori">
+                    <button class="btn btn-azul" id="salvar">Salvar e começar</button>
+                    <button class="btn btn-branco" id="cancelar">Cancelar</button>
+                </div>
+            </div>
         </div>
+        <footer><span><a href="https://github.com/jjivanc"class="fa fa-github" aria-hidden="true"></a></span><span><a href="https://www.linkedin.com/in/jjivanc/" class="fa fa-linkedin" aria-hidden="true"></a></span> </footer>
     </div>
-    <footer><span><a href="https://github.com/jjivanc"class="fa fa-github" aria-hidden="true"></a></span><span><a href="https://www.linkedin.com/in/jjivanc/" class="fa fa-linkedin" aria-hidden="true"></a></span> </footer>
-</section>
+</body>
 
 <script src="main.js"></script>
 </html>
