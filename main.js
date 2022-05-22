@@ -9,16 +9,29 @@ const salvar = document.querySelector('#salvar');
 const page01 = document.querySelector('#page01');
 const page02 = document.querySelector('#page02');
 const page03 = document.querySelector('#page03');
+const letras = document.querySelector('.letras')
+const palavra = document.querySelector('#palavra')
 //--------------------------
-const words = [
-    {palavra: 'mundo'},
-    {palavra: 'macarrao'}
-]
-
+const words = ['mundoo']
+var sordeado = words[0]
 comecar.addEventListener('click', ()=> {
     console.log('comecar');
     page01.classList.add('hide');
     page02.classList.remove('hide');
+    var separador = sordeado.split('');
+    for (var i = 0; i < separador.length; i++ ){
+        console.log(i)
+        var div = document.createElement('div');
+        var img = document.createElement('img');
+        var p = document.createElement('p');
+        p.textContent = separador[i]
+        img.src = './images/Letter3.png';
+        letras.appendChild(div)
+        div.appendChild(p)
+        div.appendChild(img)
+    };
+    console.log(separador);
+    
 });
 adicionar.addEventListener('click', ()=> {
     console.log('adicionar');

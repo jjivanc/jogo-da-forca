@@ -65,6 +65,20 @@ button {
     justify-content: center;
     padding: 2px;
 }
+img {
+    padding: 2px;
+}
+.letras {
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+p {
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+}
 textarea{
     background: none;
     color: #0A3871;
