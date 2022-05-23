@@ -79,6 +79,9 @@ p {
     padding: 5px;
     text-align: center;
 }
+.visibility {
+    visibility: hidden;
+}
 textarea{
     background: none;
     color: #0A3871;
